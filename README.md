@@ -1,0 +1,1 @@
+# tuwaiq-bootcamp-day2
