@@ -85,7 +85,13 @@ public class exercises {
         System.out.println("please enter your string");
         String str2 = input.nextLine();
 
-        str2 = str2.substring(1,5);
+        System.out.println("please enter the start index you want to extract with");
+        int start_index = input.nextInt();
+
+        System.out.println("please enter the end index you want to extract with");
+        int end_index = input.nextInt();
+
+        str2 = str2.substring(start_index,end_index);
         System.out.println("Extracted subString is: " + str2);
 
 
@@ -121,7 +127,7 @@ public class exercises {
         System.out.println("Please enter the new word:");
         String replacementWord = input.nextLine();
 
-        String modifiedSentence = original_sentence.replaceAll(word, replacementWord);
+        String modifiedSentence = original_sentence.replace(word, replacementWord);
 
         System.out.println("modified sentence: " + modifiedSentence);
 
@@ -130,7 +136,7 @@ public class exercises {
           /*8-Write a program that takes two strings as input and check if they are equal,
           ignoring the case, then prints whether they are equal or not.
           */
-//        System.out.println("----------exercise 7 ----------");
+        System.out.println("----------exercise 7 ----------");
         System.out.println("word 1:");
         String word1 = input.nextLine();
         System.out.println("word 2:");
